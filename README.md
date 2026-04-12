@@ -1,4 +1,5 @@
-# Molecular Dynamics of Heterophilic Antibody Interference in Immunoassays
+# Molecular dynamic simulations of heterophilic antibody binding to diagnostic IgG antibodies: towards understanding sample interference in rapid immunoassays
+
 
 ## Project Overview
 This project investigates the molecular mechanisms behind sample interference in rapid immunoassays, focusing on the role of heterophilic antibodies and other biological matrix components in diagnostic systems.
