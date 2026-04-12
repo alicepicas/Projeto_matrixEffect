@@ -44,4 +44,4 @@ The analysis focuses on:
 
 ## Author
 Alice Picas
-University of Minho
+University of Minho - Center of Biological Engineering
