@@ -1,7 +1,0 @@
-# Cutoff
-5
-# Number of segments
-2
-# Parameters: TAG, sigma(nm), epsilon(K), lr, la, MW(g/mol)
-PFH	0.4434	298.30	20.206	6.00		112.6806
-W	0.2915	378.87	 8.395	6.00		18.01528
