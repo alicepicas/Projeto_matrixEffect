@@ -1,0 +1,49 @@
+define                   = -DFLEXIBLE
+
+integrator               = steep
+
+emtol                    = 1000.0
+
+nsteps                   = 500
+
+nstenergy                = 1000
+
+nstlog                   = 1000
+
+nstxout-compressed       = 1000
+
+constraint-algorithm     = lincs
+
+constraints              = none
+
+cutoff-scheme            = group
+
+coulombtype              = Cut-off
+
+rcoulomb                 = 2.0
+
+vdwtype                  = user
+
+rvdw                     = 2.0
+
+DispCorr                 = no
+
+pbc                     = xyz       ; 3-D PBC
+
+periodic-molecules      = yes
+
+
+; nblist cut-off
+rlist                    = 2.0
+
+; Selection of energy groups
+energygrps               = A08 ACM FUR W
+energygrp_table          = A08 A08 A08 ACM A08 FUR A08 W ACM ACM ACM FUR ACM W FUR FUR FUR W W W
+
+; Non-equilibrium MD stuff
+;acc-grps                 =
+;accelerate               =  
+;freezegrps               = Si O
+;freezedim                = Y Y Y Y Y Y 
+;energygrp_excl           = Si Si Si O O O
+;cos_acceleration         =
