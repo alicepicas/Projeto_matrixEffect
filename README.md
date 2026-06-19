@@ -14,7 +14,6 @@ The primary objective of this work is the systematic thermodynamic validation of
 ## Objectives
 * **Force Field Validation:** Validate the coarse-grained representation of the water–FEP solid-liquid interface.
 * **Wetting and Thermodynamics:** Quantify the static water contact angle across a temperature range (0°C to 40°C).
-* **Interfacial Characterization:** Analyze interfacial water structural properties through mass density profiles.
 * **Diagnostic Foundation:** Provide the essential parameterization baseline required to simulate full-length antibody orientation dynamics on polymer surfaces.
 
 ---
