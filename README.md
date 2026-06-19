@@ -1,45 +1,53 @@
-# Molecular dynamic simulations of heterophilic antibody binding to diagnostic IgG antibodies: towards understanding sample interference in rapid immunoassays
+# Molecular Dynamic Simulations of Molecules at Teflon Surface
 
+> **Towards understanding antibody adsorption in the microcapillary film (MCF) rapid diagnostic platform**
+
+---
 
 ## Project Overview
-This project investigates the molecular mechanisms behind sample interference in rapid immunoassays, focusing on the role of heterophilic antibodies and other biological matrix components in diagnostic systems.
+This project establishes a robust computational framework to investigate molecular-level interactions at fluoropolymer bio-interfaces, specifically focusing on Teflon Fluorinated Ethylene Propylene (FEP). FEP microcapillary films (MCFs) are key substrates in miniaturized point-of-care (POC) diagnostics, relying on the passive adsorption of diagnostic IgG antibodies. 
 
-The objective is to improve the understanding of how low-affinity, polyspecific antibodies influence antigen–antibody interactions in microfluidic point-of-care diagnostics.
+The primary objective of this work is the systematic thermodynamic validation of coarse-grained molecular dynamics (MD) models against experimental wetting behaviors to enable reliable future scale-up simulations of macromolecular protein adsorption.
 
 ---
 
 ## Objectives
-- Study how heterophilic antibodies interfere with diagnostic IgG antibodies  
-- Understand the impact of biological matrix components on immunoassay performance  
-- Analyze the role of binding kinetics (kon/koff) in rapid diagnostic systems  
-- Explore molecular-level mechanisms using computational approaches  
+* **Force Field Validation:** Validate the coarse-grained representation of the water–FEP solid-liquid interface.
+* **Wetting and Thermodynamics:** Quantify the static water contact angle across a temperature range (0°C to 40°C).
+* **Interfacial Characterization:** Analyze interfacial water structural properties through mass density profiles.
+* **Diagnostic Foundation:** Provide the essential parameterization baseline required to simulate full-length antibody orientation dynamics on polymer surfaces.
 
 ---
 
-## Scientific Background
-Point-of-care immunoassays enable rapid diagnostics but are often affected by matrix interference from biological samples.
+## Computational Methodology
+The molecular simulation workflow is implemented in GROMACS utilizing advanced coarse-grained potentials to model the multi-component bio-interface:
 
-Key challenges include non-specific binding from heterophilic antibodies, alteration of binding kinetics, and reduced sensitivity in microfluidic systems.
-
-Molecular dynamics simulations provide a framework to study these interactions at atomic resolution and to better understand their impact on assay performance.
-
----
-
-## Methodology
-The project is based on a literature-supported computational approach using molecular dynamics simulations.
-
-The study considers antibody-antigen systems in the presence of interfering components such as heterophilic antibodies and serum proteins.
-
-The analysis focuses on:
-- Binding stability  
-- Interaction energies  
-- Structural changes in complexes  
-- Effects on binding kinetics  
+1. **System Composition:** Solid slab of amorphous fluorinated ethylene propylene (FEP) in contact with an explicit water/solvent reservoir.
+2. **Energy Minimization and Equilibration:** Rigorous NVT and NPT ensembles to stabilize density profiles and structural backbones.
+3. **Contact Angle Calculations:** Evaluation of droplet geometries at specified temperature constraints to track the characteristic line tension and wetting parameters.
+4. **Analysis Metrics:**
+   * **Mass Density Profiles:** Tracking water layer positioning and packing near the solid boundary.
+   * **Wetting Envelope Validation:** Direct comparison against experimentally established FEP contact angles (108ºC to 120ºC).
 
 ---
 
-## Repository Content
-- `docs/` → Project report (PDF)
+## Repository Structure
+Based on the current project architectural layout:
+
+```text
+├── CoarseGrained_ContactAngle/
+│   └── PureWater/                             # Raw simulation data and metrics
+│       ├── Sim_0C/                            # Contact angle tracking at 0°C
+│       ├── Sim_10C/                           # Contact angle tracking at 10°C
+│       ├── Sim_20C/                           # Contact angle tracking at 20°C
+│       ├── Sim_30C/                           # Contact angle tracking at 30°C
+│       └── Sim_40C/                           # Contact angle tracking at 40°C
+├── Docs/                                      # Project Documentation
+│   ├── Apresentação_Alice_Picas.pdf           # Presentation PowerPoint
+│   ├── Projeto_adsorption_teflon_final.pdf    # Final Article Report
+│   └── Projeto_matrixEffect_Alice_Picas.pdf   # State-of-Art Article Report
+└── README.md                                  # Project documentation and landing page
+
 
 ---
 
