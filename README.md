@@ -47,7 +47,7 @@ Based on the current project architectural layout:
 │   ├── Projeto_adsorption_teflon_final.pdf    # Final Article Report
 │   └── Projeto_matrixEffect_Alice_Picas.pdf   # State-of-Art Article Report
 └── README.md                                  # Project documentation and landing page
-
+```
 
 ---
 
