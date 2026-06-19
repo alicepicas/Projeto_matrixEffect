@@ -1,6 +1,6 @@
 # Molecular Dynamic Simulations of Molecules at Teflon Surface
 
-> ** #Towards understanding antibody adsorption in the microcapillary film (MCF) rapid diagnostic platform**
+> ** Towards understanding antibody adsorption in the microcapillary film (MCF) rapid diagnostic platform**
 
 ---
 
@@ -36,17 +36,17 @@ Based on the current project architectural layout:
 
 ```text
 ├── CoarseGrained_ContactAngle/
-│   └── PureWater/                             # Raw simulation data and metrics
-│       ├── Sim_0C/                            # Contact angle tracking at 0°C
-│       ├── Sim_10C/                           # Contact angle tracking at 10°C
-│       ├── Sim_20C/                           # Contact angle tracking at 20°C
-│       ├── Sim_30C/                           # Contact angle tracking at 30°C
-│       └── Sim_40C/                           # Contact angle tracking at 40°C
-├── Docs/                                      # Project Documentation
-│   ├── Apresentação_Alice_Picas.pdf           # Presentation PowerPoint
-│   ├── Projeto_adsorption_teflon_final.pdf    # Final Article Report
-│   └── Projeto_matrixEffect_Alice_Picas.pdf   # State-of-Art Article Report
-└── README.md                                  # Project documentation and landing page
+│   └── PureWater/                                          # Raw simulation data and metrics
+│       ├── Sim_0C/                                         # Contact angle tracking at 0°C
+│       ├── Sim_10C/                                        # Contact angle tracking at 10°C
+│       ├── Sim_20C/                                        # Contact angle tracking at 20°C
+│       ├── Sim_30C/                                        # Contact angle tracking at 30°C
+│       └── Sim_40C/                                        # Contact angle tracking at 40°C
+├── Docs/                                                   # Project Documentation
+│   ├── Apresentação_Alice_Picas.pdf                        # Presentation PowerPoint
+│   ├── Projeto_AdsorptionTeflon_final_Alice_ Picas.pdf     # Final Article Report
+│   └── Projeto_matrixEffect_Alice_Picas.pdf                # State-of-Art Article Report
+└── README.md                                               # Project documentation and landing page
 ```
 
 ---
